@@ -3,15 +3,10 @@ pipeline{
     stages{
        stage('GetCode'){
             steps{
-                git 'https://github.com/Deepak11python/Java_Project.git'
+                git 'https://github.com/Deepak11python/Python_Code.git'
             }
          }        
-       stage('Build'){
-            steps{
-                sh 'mvn clean package'
-            }
-         }
-        stage('SonarQube analysis') {
+               stage('SonarQube analysis') {
 //    def scannerHome = tool 'SonarScanner 4.0';
         steps{
         withSonarQubeEnv('sonarqube-8.9') { 
