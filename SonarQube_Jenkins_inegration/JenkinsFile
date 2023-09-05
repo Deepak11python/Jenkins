@@ -1,7 +1,7 @@
 pipeline{
     agent any
     environment {
-        PATH = "$PATH: D:\DEEPAK_OFFICE\GIT\apache-maven-3.9.4-bin\apache-maven-3.9.4"
+        PATH = "$PATH: C:\Program Files\apache-maven-3.9.4-bin"
     }
     stages{
        stage('GetCode'){
